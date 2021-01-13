@@ -9,7 +9,7 @@ keywords:
 - sch
 home: https://streamsets.com
 sources:
-- https://github.com/streamsets/helm-charts/tree/master/incubating/control-agent
+- https://github.com/shpwrck/helm-charts/tree/main/helm-chart-sources/streamsets
 maintainers:
 - name: kunickiaj
   email: adam@streamsets.com

@@ -3,9 +3,9 @@ entries:
   control-agent:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-01-13T14:49:58.4558675-05:00"
+    created: "2021-01-13T15:08:51.4598021-05:00"
     description: Control Agent for managing StreamSets Control Hub Deployments
-    digest: 7c29964346ecf291be445313d51d62f7c89ffe36ffbee2d96b11fa546b12f37c
+    digest: 1b933a0ebac2d2d0a4785258ddd899eb5b98b05fba54a05d4e291b4e1b34eea8
     home: https://streamsets.com
     icon: https://streamsets.com/wp-content/uploads/2016/08/StreamSets-logo-small.png
     keywords:
@@ -17,8 +17,8 @@ entries:
       name: kunickiaj
     name: control-agent
     sources:
-    - https://github.com/streamsets/helm-charts/tree/master/incubating/control-agent
+    - https://github.com/shpwrck/helm-charts/tree/main/helm-chart-sources/streamsets
     urls:
     - https://shpwrck.github.io/helm-charts/control-agent-2.0.1.tgz
     version: 2.0.1
-generated: "2021-01-13T14:49:58.4553281-05:00"
+generated: "2021-01-13T15:08:51.4591181-05:00"
