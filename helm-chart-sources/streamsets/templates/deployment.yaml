@@ -29,12 +29,12 @@ spec:
         - name: {{ include "control-agent.fullname" . }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-	  {{- if .Values.krb.enabled }}
+      {{- if .Values.krb.enabled }}
           volumeMounts:
           - name: krb5conf
             mountPath: "/opt/kerberos"
             readOnly: true
-	  {{- end}}
+      {{- end}}
           {{- if .Values.resources }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
@@ -65,7 +65,7 @@ spec:
             value: {{ include "control-agent.fullname" . }}
           - name: dpm_agent_crd_enabled
             value: "{{.Values.streamsets.crdEnabled}}"
-	  {{- if .Values.krb.enabled }}
+      {{- if .Values.krb.enabled }}
           - name: dpm_agent_kerberos_enabled
             value: "true"
           - name: KRB5_CONFIG
@@ -74,7 +74,7 @@ spec:
             value: kerbsecret
           - name: dpm_agent_kdc_type
             value: {{ .Values.krb.kdcType }}
-	  {{- end}}
+      {{- end}}
       {{- if .Values.krb.enabled }}
       volumes:
         - name: krb5conf
